@@ -1,0 +1,70 @@
+#intro{
+    height: cal(100vh-4rem);
+    width: 100vw;
+    max-width: 75;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+.bg{
+    position: absolute;
+    top: 0rem;
+    right: 0;
+    z-index: -1;
+    object-fit: cover;
+    height: 100vh;
+}
+.introcontent{
+  height: 70vh;
+    width: 100vw;
+    padding: 2rem 2rem 2rem 10vw; /* adjust this line */
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.hello{
+    font-size: 1.75rem;
+    font-weight: 100;
+
+}
+.introName{
+    color: blue;
+}
+.introPara{
+    font-size: medium;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.btn{
+    background: white;
+    margin: 1rem 0;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+.btn:hover{
+    color: blue;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid blue;
+}
+.btnImg{
+    object-fit: cover;
+    margin: 0 0.25rem;
+    height: 1rem;
+    
+}
+@media screen and (max-width: 480px){
+    .bg{
+        right: -20vw;
+    }
+     .introcontent{
+        font-size: 8vw;
+    }
+    /*.hello{
+        font-size: 4.5vw;
+    } */
+}
