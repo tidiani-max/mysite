@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './navbar.css';
-import logo from '../../assets/logo.jpeg';
+import logo from '../../assets/logo1.jpeg';
 import contactImg from '../../assets/contact.png';
 import Menu from '../../assets/menu.png'
 import { Link } from 'react-scroll';
@@ -33,7 +33,9 @@ const Navbar = ()=>{
 
             </div>
         </nav>
+        
     )
 }
 
 export default Navbar;
+
