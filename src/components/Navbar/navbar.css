@@ -1,34 +1,36 @@
-.navbar{
+.navbar {
     background: rgb(30, 30, 30);
-    height: 2rem;
+    height: 4rem;
     width: 100vw;
     max-width: 80rem;
     margin: 0 auto;
-    padding: 1rem 0rem;
+    padding: 0.5rem 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: sticky;
     top: 0;
     z-index: 3;
+}
 
-}
-.logo{
+.logo {
     object-fit: cover;
-    height: 6rem;
-    width: 8rem;
+    height: 3rem;
+    width: 4rem;
 }
-.desktopMenuListItem{
+
+.desktopMenuListItem {
     margin: 1rem;
     cursor: pointer;
-
 }
-.desktopMenuListItem:hover{
+
+.desktopMenuListItem:hover {
     color: blue;
     padding-bottom: 0.5rem;
     border-bottom: 3px solid blue;
 }
-.desktopMenuBtn{
+
+.desktopMenuBtn {
     background: white;
     color: black;
     border: none;
@@ -39,60 +41,69 @@
     border-radius: 2rem;
     cursor: pointer;
 }
-.desktopMenuBtn:hover{
+
+.desktopMenuBtn:hover {
     color: blue;
     padding-bottom: 0.5rem;
     border-bottom: 3px solid blue;
 }
 
-.desktopMenuImg{
+.desktopMenuImg {
     object-fit: cover;
     height: 1rem;
     width: 1rem;
     margin: 1rem;
 }
-.active{
+
+.active {
     color: blue;
     padding-bottom: 0.5rem;
     border-bottom: 3px solid blue;
 }
+
 .navMenu {
     position: absolute;
     top: 4rem;
-    right: 2rem;
+    right: 1rem;
     z-index: 2;
-    display: flex;
+    display: none; /* Initially hidden */
     flex-direction: column;
     padding: 0.5rem;
-    height:fit-content;
+    height: fit-content;
     min-width: 15rem;
     background: rgb(40, 40, 40);
     border-radius: 1rem;
 }
-.mobMenu{
+
+.mobMenu {
     display: none;
     object-fit: cover;
     height: 1.8rem;
+    cursor: pointer;
 }
+
 .ListItem {
     color: white;
     padding: 0.5rem 3rem;
     margin: 0.25rem;
     background: rgb(30, 30, 30);
 }
-@media screen  and (max-width:720px) {
-   
-    .mobMen {
-        display: flex;
+
+@media screen and (max-width: 720px) {
+    .mobMenu {
+        display: flex; /* Show mobile menu icon */
         padding-right: 50px;
     }
-    
-    
-    .desktopMenu{
-        display: none;
+
+    .desktopMenu {
+        display: none; /* Hide desktop menu */
     }
-    .desktopMenuBtn{
-        display: none;
+
+    .desktopMenuBtn {
+        display: none; /* Hide desktop button */
     }
-    
+
+    .navMenu {
+        display: flex; /* Display navMenu when toggled */
+    }
 }

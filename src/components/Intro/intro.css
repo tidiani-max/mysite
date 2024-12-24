@@ -25,6 +25,8 @@
     justify-content: center;
     
 }
+
+
 .hello{
     font-size: 1.75rem;
     font-weight: 100;
@@ -56,15 +58,4 @@
     margin: 0 0.25rem;
     height: 1rem;
     
-}
-@media screen and (max-width: 480px){
-    .bg{
-        right: -20vw;
-    }
-     .introcontent{
-        font-size: 8vw;
-    }
-    /*.hello{
-        font-size: 4.5vw;
-    } */
 }
